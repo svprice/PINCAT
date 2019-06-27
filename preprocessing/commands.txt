@@ -1,0 +1,7 @@
+1. To run all the partek code:
+
+    partek_run.sh <raw-file> <output-dir> <classification>
+
+    example:
+
+    partek_run.sh ../raw_data/fa_partek_inj_young.txt partek_intermediate_files/ "flow sorting markers MUSC"

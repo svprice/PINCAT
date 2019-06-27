@@ -1,1 +1,7 @@
+raw_data/partek_fa_inj_old.txt filter=lfs diff=lfs merge=lfs -text
+raw_data/partek_fa_inj_postnatal.txt filter=lfs diff=lfs merge=lfs -text
+raw_data/partek_fa_inj_young.txt filter=lfs diff=lfs merge=lfs -text
+raw_data/partek_myod_old.txt filter=lfs diff=lfs merge=lfs -text
+raw_data/partek_myod_postnatal.txt filter=lfs diff=lfs merge=lfs -text
+raw_data/partek_myod_young.txt filter=lfs diff=lfs merge=lfs -text
 raw_data filter=lfs diff=lfs merge=lfs -text
