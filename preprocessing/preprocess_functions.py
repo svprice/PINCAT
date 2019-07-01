@@ -19,7 +19,7 @@ def partekSpecificPreprocessing(group_id, directory, classification):
 
     else:
 
-        # os.mkdir(directory + group_id)
+        os.mkdir(directory + group_id)
 
         print("Downloading raw data...")
         raw_data = pd.read_csv(raw_file,sep='\t')
@@ -62,15 +62,16 @@ def partekSpecificPreprocessing(group_id, directory, classification):
         print("Partek specific preprocessing completed!")
 
 
-def getEnsemblMap(group_id, directory):
+
+def downloadEnsemblMapData(group_id, directory):
     # INPUT: file containing all the gene symbols
     # OUTPUT: file containing all the gene symbols w/
     #         corresponding ensembl IDs
 
-    print('Starting getEnsemblMap...')
-    if os.path.exists(directory + group_id + '/gene_ensembl_map_all_probes.csv'):
-	print("File gene_ensembl_map_all_probes.csv already exists." \
-               + " Please delete existing file to get mapping.")
+    print('Starting downloadEnsemblMapData...')
+    if os.path.exists(directory + group_id + '/db2db_GeneToEns_Responses'):
+	print("Directory db2db_GeneToEns_Responses already exists." \
+               + " Please delete existing directory to download data.")
     else:
         
         directory = directory + group_id + '/'
@@ -128,9 +129,22 @@ def getEnsemblMap(group_id, directory):
                 count+=1
                 print(str(count) + "/" + str(len(query_list)) + " completed")
 
+    print('downloadEnsemblMapData completed!')
+
+
+def mergeToCreateEnsemblMap(group_id, directory):
+
+    print("Starting mergeToCreateEnsemblMap...")
+
+    if os.path.exists(directory + group_id + '/gene_ensembl_map.csv'):
+	print("File gene_ensembl_map.csv already exists." \
+               + " Please delete existing file to merge data.")
+    else:
+
+        directory = directory + group_id + '/'
+
         response_list = os.listdir(directory + '/db2db_GeneToEns_Responses/')
 
-        print("Beginning merge.")
         # initialize gene symbol to ensembl map
         ensembl_map = []
         
@@ -149,25 +163,23 @@ def getEnsemblMap(group_id, directory):
                         gene_symbol = element.text
                     if element.tag == 'EnsemblProteinID':
                         if element.text == None:
-                            best_ens_id = ""
+                            ensembl_map.append((gene_symbol,""))
                         else:
                             ens_id_list = element.text.split('//')
-                            best_ens_id = ''
-                            for val in range(len(ens_id_list)):
-                                ens_id = ens_id_list[val]
-                                if len(ens_id) > len(best_ens_id):
-                                    best_ens_id = ens_id
+                            for ens_id in ens_id_list:
+                                ensembl_map.append((gene_symbol,ens_id))
 
 
-                        ensembl_map.append((gene_symbol,best_ens_id))
 
         output_map_df = pd.DataFrame(ensembl_map,columns=['gene_symbol', 'ensembl_id'])
         output_map_df = output_map_df.iloc[output_map_df.gene_symbol.str.lower().argsort()]
-        output_map_df.to_csv(directory + 'gene_ensembl_map_all_probes.csv',index=False)
-        print("Completed merge.")
 
-        print("getEnsemblMap completed!")
+        output_map_df['ensembl_id'] = output_map_df['ensembl_id'].apply( \
+                lambda x: '10090.' + x)
 
+        output_map_df.to_csv(directory + 'gene_ensembl_map.csv',index=False)
+
+        print("mergeToCreateEnsemblMap completed!")
 
     return 0
 
@@ -178,7 +190,7 @@ def applyAllEnsemblMaps(group_id, directory):
 
     print('Starting applyAllEnsemblMaps...')
     if os.path.isdir(directory + group_id + '/EnsemblID/'):
-	print("\"" + group_id + "\"/EnsemblID/ directory already exists." \
+	print(group_id + "/EnsemblID/ directory already exists." \
                + " Please delete existing directory to run mapping.")
 
     else:
@@ -188,43 +200,42 @@ def applyAllEnsemblMaps(group_id, directory):
         os.mkdir(directory + 'EnsemblID')
 
         gene_symbol_list = os.listdir(directory + 'Gene_Symbol')
-        gene_ensembl_map = pd.read_csv(directory + 'gene_ensembl_map_all_probes.csv')
-        gene_ensembl_dict = gene_ensembl_map.set_index('gene_symbol').to_dict()
+        gene_ensembl_map = pd.read_csv(directory + 'gene_ensembl_map.csv')
+        gene_ensembl_dict = {}
 
-        print("Create used subset of map in gene_ensembl_map.csv")
-        # Computes the used gene ensembl map
-        map_all_probes = pd.read_csv(directory + 'gene_ensembl_map_all_probes.csv')
-        map_all_probes['ensembl_id'] = map_all_probes['gene_symbol'].map( \
-                gene_ensembl_dict['ensembl_id'])
+        for gene in gene_ensembl_map['gene_symbol'].unique():
+            gene_ensembl_dict[gene] = \
+                gene_ensembl_map[gene_ensembl_map['gene_symbol']==gene]['ensembl_id'].tolist()
 
-        map_all_probes = map_all_probes[map_all_probes['ensembl_id'].apply( \
-            lambda x: not isinstance(x,float) and len(x)>1)]
-
-        map_all_probes['ensembl_id'] = map_all_probes['ensembl_id'].apply( \
-                lambda x: '10090.' + x)
-
-        map_all_probes.to_csv(directory + 'gene_ensembl_map.csv', index=False)
-
-        print("Finished creating gene_ensembl_map.csv")
-
+        
         for gene_symbol_file in gene_symbol_list:
 
-            gene_symbol_df = pd.read_csv(directory + 'Gene_Symbol/' + gene_symbol_file)
-            gene_symbol_df['ensembl_id'] = gene_symbol_df['gene_symbol'].map( \
-                                           gene_ensembl_dict['ensembl_id'])
-
-            gene_symbol_df = gene_symbol_df[gene_symbol_df['ensembl_id'].apply( \
-                                lambda x: not isinstance(x,float) and len(x)>1)]
-
-            gene_symbol_df['ensembl_id'] = gene_symbol_df['ensembl_id'].apply( \
-                                                        lambda x: '10090.' + x)
-
             output_filename = gene_symbol_file.replace('gene_symbol','ensembl')
-            gene_symbol_df.to_csv(directory + 'EnsemblID/' + output_filename, index=False)
+            output_file = open(directory + 'EnsemblID/' + output_filename,'w')
+
+            gene_symbol_df = pd.read_csv(directory + 'Gene_Symbol/' + gene_symbol_file)
+
+            gene_symbol_df = gene_symbol_df[gene_symbol_df['expr_val'] > 0]
+            gene_expr_dict = gene_symbol_df.set_index('gene_symbol').to_dict()['expr_val']
+          
+            output_file.write('gene_symbol,ensembl_id,expr_val\n')
+            for key in sorted(gene_expr_dict):
+                for ens_id in gene_ensembl_dict[key]:
+                    if len(str(ens_id)) > 10:
+                        output_file.write(str(key)+',' \
+                                +str(ens_id)+',' \
+                                +str(gene_expr_dict[key]) \
+                                +'\n')
+
+
+            output_file.close()
+            
+            
 
         print('applyAllEnsemblMaps completed!')
 
     return 0
+
 
  
 def getNetworkData(group_id, directory):

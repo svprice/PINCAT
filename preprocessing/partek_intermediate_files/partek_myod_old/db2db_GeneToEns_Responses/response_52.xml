@@ -1,403 +1,403 @@
 <?xml version="1.0"?>
 <response>
   <item>
-    <InputValue>Doc2b</InputValue>
-    <EnsemblProteinID>ENSMUSP00000021209</EnsemblProteinID>
+    <InputValue>Endog</InputValue>
+    <EnsemblProteinID>ENSMUSP00000015481</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Doc2g</InputValue>
-    <EnsemblProteinID>//ENSMUSP00000025806//ENSMUSP00000158285</EnsemblProteinID>
+    <InputValue>Endou</InputValue>
+    <EnsemblProteinID>ENSMUSP00000097820//ENSMUSP00000155246//ENSMUSP00000023105</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dock1</InputValue>
-    <EnsemblProteinID>ENSMUSP00000147797//ENSMUSP00000081531//ENSMUSP00000147945//</EnsemblProteinID>
+    <InputValue>Endov</InputValue>
+    <EnsemblProteinID>ENSMUSP00000128455//ENSMUSP00000132755//ENSMUSP00000131108////ENSMUSP00000119599//ENSMUSP00000068849//ENSMUSP00000118226//ENSMUSP00000101851//ENSMUSP00000132873</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dock2</InputValue>
-    <EnsemblProteinID>ENSMUSP00000098916////ENSMUSP00000098915//ENSMUSP00000116893//ENSMUSP00000090884</EnsemblProteinID>
+    <InputValue>Eng</InputValue>
+    <EnsemblProteinID>//ENSMUSP00000130585//ENSMUSP00000122186//ENSMUSP00000108897//ENSMUSP00000009705</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dock3</InputValue>
-    <EnsemblProteinID>ENSMUSP00000127059//ENSMUSP00000131701////ENSMUSP00000047652//ENSMUSP00000131410//ENSMUSP00000130873</EnsemblProteinID>
+    <InputValue>Engase</InputValue>
+    <EnsemblProteinID>ENSMUSP00000127862//ENSMUSP00000132734//ENSMUSP00000117538//ENSMUSP00000126050//ENSMUSP00000130097//ENSMUSP00000129698////ENSMUSP00000125886</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dock4</InputValue>
-    <EnsemblProteinID>//ENSMUSP00000047387//ENSMUSP00000152420</EnsemblProteinID>
+    <InputValue>Enho</InputValue>
+    <EnsemblProteinID>ENSMUSP00000137902</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dock5</InputValue>
-    <EnsemblProteinID>//ENSMUSP00000036674</EnsemblProteinID>
+    <InputValue>Enkd1</InputValue>
+    <EnsemblProteinID>ENSMUSP00000148814//ENSMUSP00000013299//</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dock6</InputValue>
-    <EnsemblProteinID>ENSMUSP00000149156////ENSMUSP00000150250//ENSMUSP00000034728//ENSMUSP00000150347</EnsemblProteinID>
+    <InputValue>Enkur</InputValue>
+    <EnsemblProteinID>ENSMUSP00000027992//</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dock7</InputValue>
-    <EnsemblProteinID>ENSMUSP00000114204//ENSMUSP00000117797//ENSMUSP00000145833//ENSMUSP00000145604//ENSMUSP00000145985//ENSMUSP00000030286//ENSMUSP00000075233//ENSMUSP00000119103////ENSMUSP00000145749</EnsemblProteinID>
+    <InputValue>Eno1</InputValue>
+    <EnsemblProteinID>//ENSMUSP00000120059//ENSMUSP00000123695//ENSMUSP00000079727//ENSMUSP00000079045//ENSMUSP00000114361</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dock8</InputValue>
-    <EnsemblProteinID>ENSMUSP00000025831//</EnsemblProteinID>
+    <InputValue>Eno1b</InputValue>
+    <EnsemblProteinID>ENSMUSP00000075513//ENSMUSP00000157807</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dock9</InputValue>
-    <EnsemblProteinID>//ENSMUSP00000047881//ENSMUSP00000148834//ENSMUSP00000148328//ENSMUSP00000148303//ENSMUSP00000097872</EnsemblProteinID>
+    <InputValue>Eno2</InputValue>
+    <EnsemblProteinID>ENSMUSP00000144854//ENSMUSP00000119112////ENSMUSP00000004378//ENSMUSP00000144861//ENSMUSP00000145216//ENSMUSP00000114500//ENSMUSP00000108095//ENSMUSP00000145131//ENSMUSP00000144698</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dock10</InputValue>
-    <EnsemblProteinID>ENSMUSP00000139567//ENSMUSP00000140719//ENSMUSP00000140102//ENSMUSP00000140868////ENSMUSP00000140513//ENSMUSP00000077099//ENSMUSP00000140085</EnsemblProteinID>
+    <InputValue>Eno3</InputValue>
+    <EnsemblProteinID>ENSMUSP00000121640//ENSMUSP00000072620//ENSMUSP00000123688//ENSMUSP00000137559//ENSMUSP00000128714//ENSMUSP00000115726//ENSMUSP00000104188//</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dock11</InputValue>
-    <EnsemblProteinID>ENSMUSP00000033419//ENSMUSP00000110921//ENSMUSP00000110919//</EnsemblProteinID>
+    <InputValue>Eno4</InputValue>
+    <EnsemblProteinID>ENSMUSP00000144656//ENSMUSP00000062584//ENSMUSP00000143831//ENSMUSP00000144272</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dohh</InputValue>
-    <EnsemblProteinID>ENSMUSP00000122952//ENSMUSP00000072534//ENSMUSP00000113112////ENSMUSP00000120386</EnsemblProteinID>
+    <InputValue>Enoph1</InputValue>
+    <EnsemblProteinID>ENSMUSP00000031268////ENSMUSP00000129704</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dok1</InputValue>
-    <EnsemblProteinID>ENSMUSP00000145347//ENSMUSP00000145318//ENSMUSP00000087079</EnsemblProteinID>
+    <InputValue>Enox1</InputValue>
+    <EnsemblProteinID>ENSMUSP00000022589////ENSMUSP00000154512//ENSMUSP00000154296</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dok2</InputValue>
-    <EnsemblProteinID>ENSMUSP00000022698//</EnsemblProteinID>
+    <InputValue>Enox2</InputValue>
+    <EnsemblProteinID>//ENSMUSP00000110561//ENSMUSP00000110564//ENSMUSP00000033437//ENSMUSP00000110568//ENSMUSP00000110562//ENSMUSP00000128885</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dok3</InputValue>
-    <EnsemblProteinID>ENSMUSP00000153308////ENSMUSP00000046695</EnsemblProteinID>
+    <InputValue>Enpep</InputValue>
+    <EnsemblProteinID>ENSMUSP00000128872////ENSMUSP00000129759//ENSMUSP00000029658</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dok4</InputValue>
-    <EnsemblProteinID>ENSMUSP00000148355//ENSMUSP00000148825//ENSMUSP00000148698//ENSMUSP00000043554</EnsemblProteinID>
+    <InputValue>Enpp1</InputValue>
+    <EnsemblProteinID>ENSMUSP00000101159//ENSMUSP00000114273////ENSMUSP00000046090</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dok5</InputValue>
-    <EnsemblProteinID>ENSMUSP00000029075</EnsemblProteinID>
+    <InputValue>Enpp2</InputValue>
+    <EnsemblProteinID>ENSMUSP00000132640//ENSMUSP00000154470////ENSMUSP00000133877//ENSMUSP00000036180//ENSMUSP00000128941//ENSMUSP00000154729</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dok6</InputValue>
-    <EnsemblProteinID>//ENSMUSP00000095103</EnsemblProteinID>
+    <InputValue>Enpp3</InputValue>
+    <EnsemblProteinID>ENSMUSP00000151540//ENSMUSP00000151646////ENSMUSP00000152033//ENSMUSP00000151371//ENSMUSP00000020169//ENSMUSP00000151393//ENSMUSP00000151518</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dok7</InputValue>
-    <EnsemblProteinID>ENSMUSP00000059538////ENSMUSP00000098856//ENSMUSP00000109909//ENSMUSP00000116023</EnsemblProteinID>
+    <InputValue>Enpp4</InputValue>
+    <EnsemblProteinID>ENSMUSP00000114429//ENSMUSP00000024757</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dolk</InputValue>
-    <EnsemblProteinID>ENSMUSP00000097792</EnsemblProteinID>
+    <InputValue>Enpp5</InputValue>
+    <EnsemblProteinID>ENSMUSP00000024756//ENSMUSP00000122767//ENSMUSP00000115049</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dolpp1</InputValue>
-    <EnsemblProteinID>ENSMUSP00000119478//ENSMUSP00000109242////ENSMUSP00000116276//ENSMUSP00000115602//ENSMUSP00000028209</EnsemblProteinID>
+    <InputValue>Enpp6</InputValue>
+    <EnsemblProteinID>ENSMUSP00000121470////ENSMUSP00000112633//ENSMUSP00000044608//ENSMUSP00000147811</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Donson</InputValue>
-    <EnsemblProteinID>//ENSMUSP00000109665//ENSMUSP00000123648//ENSMUSP00000113220//ENSMUSP00000121591//ENSMUSP00000121386//ENSMUSP00000122506//ENSMUSP00000023682//ENSMUSP00000156028//ENSMUSP00000120957//ENSMUSP00000122778</EnsemblProteinID>
+    <InputValue>Ensa</InputValue>
+    <EnsemblProteinID>ENSMUSP00000045937////ENSMUSP00000051799</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dopey1</InputValue>
-    <EnsemblProteinID>-</EnsemblProteinID>
+    <InputValue>Enthd1</InputValue>
+    <EnsemblProteinID>ENSMUSP00000155166//ENSMUSP00000094072</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dopey2</InputValue>
-    <EnsemblProteinID>-</EnsemblProteinID>
+    <InputValue>Entpd1</InputValue>
+    <EnsemblProteinID>//ENSMUSP00000107850//ENSMUSP00000116285//ENSMUSP00000116349//ENSMUSP00000116895//ENSMUSP00000117213</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dot1l</InputValue>
-    <EnsemblProteinID>ENSMUSP00000130408//ENSMUSP00000116581//ENSMUSP00000100973//ENSMUSP00000127762////ENSMUSP00000119492</EnsemblProteinID>
+    <InputValue>Entpd2</InputValue>
+    <EnsemblProteinID>//ENSMUSP00000028328</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dpagt1</InputValue>
-    <EnsemblProteinID>ENSMUSP00000150465////ENSMUSP00000056282//ENSMUSP00000150178</EnsemblProteinID>
+    <InputValue>Entpd3</InputValue>
+    <EnsemblProteinID>ENSMUSP00000036830//</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dpcr1</InputValue>
-    <EnsemblProteinID>-</EnsemblProteinID>
+    <InputValue>Entpd5</InputValue>
+    <EnsemblProteinID>ENSMUSP00000105901//ENSMUSP00000114011//ENSMUSP00000112516////ENSMUSP00000113106//ENSMUSP00000021662//ENSMUSP00000071939</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dpep1</InputValue>
-    <EnsemblProteinID>ENSMUSP00000148823//ENSMUSP00000019422//ENSMUSP00000148609</EnsemblProteinID>
+    <InputValue>Entpd6</InputValue>
+    <EnsemblProteinID>ENSMUSP00000092038//</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dpep2</InputValue>
-    <EnsemblProteinID>ENSMUSP00000113877////ENSMUSP00000034373//ENSMUSP00000154250//ENSMUSP00000080659</EnsemblProteinID>
+    <InputValue>Entpd7</InputValue>
+    <EnsemblProteinID>ENSMUSP00000079864//</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dpep3</InputValue>
-    <EnsemblProteinID>ENSMUSP00000034371</EnsemblProteinID>
+    <InputValue>Entpd8</InputValue>
+    <EnsemblProteinID>ENSMUSP00000110017////ENSMUSP00000142316//ENSMUSP00000040628//ENSMUSP00000110022</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dpf1</InputValue>
-    <EnsemblProteinID>ENSMUSP00000103866////ENSMUSP00000070539//ENSMUSP00000120956//ENSMUSP00000103865//ENSMUSP00000054385//ENSMUSP00000117186</EnsemblProteinID>
+    <InputValue>Eny2</InputValue>
+    <EnsemblProteinID>ENSMUSP00000154226//ENSMUSP00000154030//ENSMUSP00000154687//ENSMUSP00000154515//ENSMUSP00000052905////ENSMUSP00000154106</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dpf2</InputValue>
-    <EnsemblProteinID>//ENSMUSP00000025746//ENSMUSP00000120125//ENSMUSP00000158488//ENSMUSP00000113465</EnsemblProteinID>
+    <InputValue>Eogt</InputValue>
+    <EnsemblProteinID>ENSMUSP00000109014//ENSMUSP00000115101//ENSMUSP00000061610////ENSMUSP00000116362//ENSMUSP00000117541//ENSMUSP00000145303</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dpf3</InputValue>
-    <EnsemblProteinID>ENSMUSP00000120700//ENSMUSP00000136280//ENSMUSP00000122598//ENSMUSP00000121199//ENSMUSP00000122004//ENSMUSP00000136740//ENSMUSP00000137477</EnsemblProteinID>
+    <InputValue>Eomes</InputValue>
+    <EnsemblProteinID>ENSMUSP00000107393//ENSMUSP00000035020//ENSMUSP00000118079</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dph1</InputValue>
-    <EnsemblProteinID>//ENSMUSP00000116537//ENSMUSP00000042162</EnsemblProteinID>
+    <InputValue>Ep300</InputValue>
+    <EnsemblProteinID>ENSMUSP00000146251//ENSMUSP00000139889//ENSMUSP00000145639////ENSMUSP00000066789</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dph2</InputValue>
-    <EnsemblProteinID>//ENSMUSP00000030265//ENSMUSP00000138948</EnsemblProteinID>
+    <InputValue>Ep400</InputValue>
+    <EnsemblProteinID>ENSMUSP00000049038//ENSMUSP00000108055//ENSMUSP00000116137////ENSMUSP00000108052//ENSMUSP00000138369//ENSMUSP00000108054</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dph3</InputValue>
-    <EnsemblProteinID>ENSMUSP00000120583//ENSMUSP00000022461////ENSMUSP00000068491//ENSMUSP00000127944</EnsemblProteinID>
+    <InputValue>Epas1</InputValue>
+    <EnsemblProteinID>ENSMUSP00000024954//</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dph5</InputValue>
-    <EnsemblProteinID>ENSMUSP00000142654//ENSMUSP00000139249//ENSMUSP00000143049//ENSMUSP00000043730////ENSMUSP00000140958//ENSMUSP00000102114</EnsemblProteinID>
+    <InputValue>Epb41</InputValue>
+    <EnsemblProteinID>ENSMUSP00000123623//ENSMUSP00000101594//ENSMUSP00000122234//ENSMUSP00000101601//ENSMUSP00000121764//ENSMUSP00000060375//ENSMUSP00000101592//ENSMUSP00000148515//ENSMUSP00000101590//ENSMUSP00000030739////ENSMUSP00000116599//ENSMUSP00000101595//ENSMUSP00000120236//ENSMUSP00000081274</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dph6</InputValue>
-    <EnsemblProteinID>ENSMUSP00000099601////ENSMUSP00000028640//ENSMUSP00000060730</EnsemblProteinID>
+    <InputValue>Epb41l1</InputValue>
+    <EnsemblProteinID>ENSMUSP00000099425//ENSMUSP00000154929//ENSMUSP00000099426////ENSMUSP00000121161//ENSMUSP00000105202//ENSMUSP00000105205//ENSMUSP00000029155</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dph7</InputValue>
-    <EnsemblProteinID>ENSMUSP00000141890//ENSMUSP00000142220//ENSMUSP00000141547////ENSMUSP00000142067//ENSMUSP00000142315//ENSMUSP00000028351</EnsemblProteinID>
+    <InputValue>Epb41l2</InputValue>
+    <EnsemblProteinID>ENSMUSP00000151233//ENSMUSP00000151332//ENSMUSP00000055122//ENSMUSP00000151685//ENSMUSP00000151632//ENSMUSP00000151707//ENSMUSP00000151258//ENSMUSP00000090314//ENSMUSP00000151702////ENSMUSP00000152003//ENSMUSP00000151926//ENSMUSP00000151875</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dpm1</InputValue>
-    <EnsemblProteinID>ENSMUSP00000104816//ENSMUSP00000096671//ENSMUSP00000118776//</EnsemblProteinID>
+    <InputValue>Epb41l3</InputValue>
+    <EnsemblProteinID>ENSMUSP00000156827////ENSMUSP00000153228//ENSMUSP00000153133//ENSMUSP00000108300//ENSMUSP00000079098//ENSMUSP00000156921//ENSMUSP00000153611//ENSMUSP00000153138//ENSMUSP00000153195//ENSMUSP00000153190//ENSMUSP00000153198//ENSMUSP00000156566//ENSMUSP00000153146</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dpm2</InputValue>
-    <EnsemblProteinID>ENSMUSP00000124665////ENSMUSP00000028151</EnsemblProteinID>
+    <InputValue>Epb41l4a</InputValue>
+    <EnsemblProteinID>ENSMUSP00000025234//</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dpm3</InputValue>
-    <EnsemblProteinID>//ENSMUSP00000040860//ENSMUSP00000103086</EnsemblProteinID>
+    <InputValue>Epb41l4aos</InputValue>
+    <EnsemblProteinID/>
   </item>
   <item>
-    <InputValue>Dpp3</InputValue>
-    <EnsemblProteinID>ENSMUSP00000158453//ENSMUSP00000158386//ENSMUSP00000157448//ENSMUSP00000025851////ENSMUSP00000157895</EnsemblProteinID>
+    <InputValue>Epb41l4b</InputValue>
+    <EnsemblProteinID>ENSMUSP00000030142//ENSMUSP00000037625////ENSMUSP00000092687</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dpp4</InputValue>
-    <EnsemblProteinID>ENSMUSP00000044050//</EnsemblProteinID>
+    <InputValue>Epb41l5</InputValue>
+    <EnsemblProteinID>ENSMUSP00000027632//ENSMUSP00000128374//ENSMUSP00000140227//ENSMUSP00000058966////ENSMUSP00000139683</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dpp6</InputValue>
-    <EnsemblProteinID>//ENSMUSP00000113441//ENSMUSP00000071435//ENSMUSP00000099012//ENSMUSP00000115944//ENSMUSP00000113849</EnsemblProteinID>
+    <InputValue>Epc1</InputValue>
+    <EnsemblProteinID>ENSMUSP00000060599//ENSMUSP00000028100////ENSMUSP00000111536</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dpp7</InputValue>
-    <EnsemblProteinID>ENSMUSP00000028332//</EnsemblProteinID>
+    <InputValue>Epc2</InputValue>
+    <EnsemblProteinID>ENSMUSP00000089758//ENSMUSP00000119134</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dpp8</InputValue>
-    <EnsemblProteinID>//ENSMUSP00000126065//ENSMUSP00000150334//ENSMUSP00000034960</EnsemblProteinID>
+    <InputValue>Epcam</InputValue>
+    <EnsemblProteinID>//ENSMUSP00000157220//ENSMUSP00000157099//ENSMUSP00000061935//ENSMUSP00000157040</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dpp9</InputValue>
-    <EnsemblProteinID>//ENSMUSP00000046604</EnsemblProteinID>
+    <InputValue>Epdr1</InputValue>
+    <EnsemblProteinID>ENSMUSP00000152124////ENSMUSP00000002885//ENSMUSP00000152111</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dpp10</InputValue>
-    <EnsemblProteinID>//ENSMUSP00000108225//ENSMUSP00000108222</EnsemblProteinID>
+    <InputValue>Epg5</InputValue>
+    <EnsemblProteinID>//ENSMUSP00000155113//ENSMUSP00000038681</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dppa1</InputValue>
-    <EnsemblProteinID>ENSMUSP00000104850//ENSMUSP00000076416</EnsemblProteinID>
+    <InputValue>Epgn</InputValue>
+    <EnsemblProteinID>ENSMUSP00000144500//ENSMUSP00000046987</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dppa2</InputValue>
-    <EnsemblProteinID>ENSMUSP00000110183//ENSMUSP00000156143</EnsemblProteinID>
+    <InputValue>Epha1</InputValue>
+    <EnsemblProteinID>//ENSMUSP00000073099//ENSMUSP00000144763</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dppa3</InputValue>
-    <EnsemblProteinID>ENSMUSP00000062832//ENSMUSP00000115252</EnsemblProteinID>
+    <InputValue>Epha2</InputValue>
+    <EnsemblProteinID>//ENSMUSP00000006614</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dppa4</InputValue>
-    <EnsemblProteinID>//ENSMUSP00000093748//ENSMUSP00000093749</EnsemblProteinID>
+    <InputValue>Epha3</InputValue>
+    <EnsemblProteinID>ENSMUSP00000156331//ENSMUSP00000066554//ENSMUSP00000155997//ENSMUSP00000155946//ENSMUSP00000155890//</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dppa5a</InputValue>
-    <EnsemblProteinID>ENSMUSP00000071881</EnsemblProteinID>
+    <InputValue>Epha4</InputValue>
+    <EnsemblProteinID>ENSMUSP00000140408////ENSMUSP00000027451//ENSMUSP00000140370//ENSMUSP00000140631//ENSMUSP00000140954//ENSMUSP00000139640</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dpt</InputValue>
-    <EnsemblProteinID>ENSMUSP00000027861</EnsemblProteinID>
+    <InputValue>Epha5</InputValue>
+    <EnsemblProteinID>ENSMUSP00000109030////ENSMUSP00000060646//ENSMUSP00000109028//ENSMUSP00000109025//ENSMUSP00000109033//ENSMUSP00000109026</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dpy19l1</InputValue>
-    <EnsemblProteinID>ENSMUSP00000110932////ENSMUSP00000129575//ENSMUSP00000119986</EnsemblProteinID>
+    <InputValue>Epha7</InputValue>
+    <EnsemblProteinID>//ENSMUSP00000079735//ENSMUSP00000103829//ENSMUSP00000029964//ENSMUSP00000103826</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dpy19l3</InputValue>
-    <EnsemblProteinID>ENSMUSP00000054747//ENSMUSP00000122489//ENSMUSP00000123340//</EnsemblProteinID>
+    <InputValue>Ephb1</InputValue>
+    <EnsemblProteinID>ENSMUSP00000082261//ENSMUSP00000139470//ENSMUSP00000035129//</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dpy19l4</InputValue>
-    <EnsemblProteinID>ENSMUSP00000119923////ENSMUSP00000081954//ENSMUSP00000122823//ENSMUSP00000115537</EnsemblProteinID>
+    <InputValue>Ephb2</InputValue>
+    <EnsemblProteinID>ENSMUSP00000101471////ENSMUSP00000058135//ENSMUSP00000101472//ENSMUSP00000116350</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dpy30</InputValue>
-    <EnsemblProteinID>ENSMUSP00000126702//ENSMUSP00000156790//ENSMUSP00000156830//ENSMUSP00000108190//ENSMUSP00000156795//ENSMUSP00000156471</EnsemblProteinID>
+    <InputValue>Ephb3</InputValue>
+    <EnsemblProteinID>ENSMUSP00000155937//ENSMUSP00000155955////ENSMUSP00000006112//ENSMUSP00000124375</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dpyd</InputValue>
-    <EnsemblProteinID>//ENSMUSP00000039429//ENSMUSP00000143022</EnsemblProteinID>
+    <InputValue>Ephb4</InputValue>
+    <EnsemblProteinID>ENSMUSP00000130275//ENSMUSP00000106684//ENSMUSP00000106683//ENSMUSP00000115731//ENSMUSP00000051622</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dpys</InputValue>
-    <EnsemblProteinID>ENSMUSP00000022915////ENSMUSP00000114708//ENSMUSP00000105935</EnsemblProteinID>
+    <InputValue>Ephb6</InputValue>
+    <EnsemblProteinID>//ENSMUSP00000132773//ENSMUSP00000110380//ENSMUSP00000133131</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dpysl2</InputValue>
-    <EnsemblProteinID>ENSMUSP00000022629</EnsemblProteinID>
+    <InputValue>Ephx1</InputValue>
+    <EnsemblProteinID>ENSMUSP00000047551//ENSMUSP00000114363//ENSMUSP00000122671//ENSMUSP00000106697</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dpysl3</InputValue>
-    <EnsemblProteinID>ENSMUSP00000112928//ENSMUSP00000158446////ENSMUSP00000113711//ENSMUSP00000025379</EnsemblProteinID>
+    <InputValue>Ephx2</InputValue>
+    <EnsemblProteinID>ENSMUSP00000152894//ENSMUSP00000069209//ENSMUSP00000153161</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dpysl4</InputValue>
-    <EnsemblProteinID>ENSMUSP00000026551//ENSMUSP00000112896////ENSMUSP00000117764//ENSMUSP00000149857//ENSMUSP00000149388//ENSMUSP00000150209</EnsemblProteinID>
+    <InputValue>Ephx3</InputValue>
+    <EnsemblProteinID>ENSMUSP00000124600//ENSMUSP00000085013</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dpysl5</InputValue>
-    <EnsemblProteinID>ENSMUSP00000110377//ENSMUSP00000085400//ENSMUSP00000098985//</EnsemblProteinID>
+    <InputValue>Ephx4</InputValue>
+    <EnsemblProteinID>ENSMUSP00000123962//ENSMUSP00000043764//ENSMUSP00000124661//ENSMUSP00000125261</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dqx1</InputValue>
-    <EnsemblProteinID>ENSMUSP00000076708//ENSMUSP00000144697</EnsemblProteinID>
+    <InputValue>Epm2a</InputValue>
+    <EnsemblProteinID>ENSMUSP00000066050//</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dr1</InputValue>
-    <EnsemblProteinID>//ENSMUSP00000031190</EnsemblProteinID>
+    <InputValue>Epm2aip1</InputValue>
+    <EnsemblProteinID>ENSMUSP00000052904//ENSMUSP00000120245//</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dram1</InputValue>
-    <EnsemblProteinID>ENSMUSP00000123685//ENSMUSP00000116312//ENSMUSP00000020249</EnsemblProteinID>
+    <InputValue>Epn1</InputValue>
+    <EnsemblProteinID>ENSMUSP00000122594//ENSMUSP00000146638//ENSMUSP00000043340////ENSMUSP00000096445//ENSMUSP00000116571</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dram2</InputValue>
-    <EnsemblProteinID>ENSMUSP00000118686////ENSMUSP00000118821//ENSMUSP00000063510//ENSMUSP00000119227//ENSMUSP00000117078//ENSMUSP00000112680//ENSMUSP00000029507</EnsemblProteinID>
+    <InputValue>Epn2</InputValue>
+    <EnsemblProteinID>ENSMUSP00000001063//ENSMUSP00000104353////ENSMUSP00000104352//ENSMUSP00000117389//ENSMUSP00000136553//ENSMUSP00000104351//ENSMUSP00000136950//ENSMUSP00000122666//ENSMUSP00000123675//ENSMUSP00000122514</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Drap1</InputValue>
-    <EnsemblProteinID>ENSMUSP00000025853//ENSMUSP00000133692//ENSMUSP00000109303////ENSMUSP00000121162//ENSMUSP00000109304</EnsemblProteinID>
+    <InputValue>Epn3</InputValue>
+    <EnsemblProteinID>//ENSMUSP00000121390</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Draxin</InputValue>
-    <EnsemblProteinID>ENSMUSP00000030862</EnsemblProteinID>
+    <InputValue>Epop</InputValue>
+    <EnsemblProteinID>ENSMUSP00000051211</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Drc1</InputValue>
-    <EnsemblProteinID>ENSMUSP00000098992//</EnsemblProteinID>
+    <InputValue>Epor</InputValue>
+    <EnsemblProteinID>ENSMUSP00000006397//ENSMUSP00000149402</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Drc3</InputValue>
-    <EnsemblProteinID>ENSMUSP00000065525//ENSMUSP00000091691//ENSMUSP00000104363////ENSMUSP00000104362</EnsemblProteinID>
+    <InputValue>Eppk1</InputValue>
+    <EnsemblProteinID>ENSMUSP00000154609</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Drc7</InputValue>
-    <EnsemblProteinID>ENSMUSP00000053972//</EnsemblProteinID>
+    <InputValue>Eprs</InputValue>
+    <EnsemblProteinID>ENSMUSP00000141550////ENSMUSP00000045841//ENSMUSP00000141467</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Drd1</InputValue>
-    <EnsemblProteinID>ENSMUSP00000152768////ENSMUSP00000021932</EnsemblProteinID>
+    <InputValue>Eps8</InputValue>
+    <EnsemblProteinID>ENSMUSP00000145059//ENSMUSP00000120648//ENSMUSP00000098402//ENSMUSP00000107509////ENSMUSP00000120044//ENSMUSP00000052776//ENSMUSP00000122517//ENSMUSP00000119997</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Drd4</InputValue>
-    <EnsemblProteinID>ENSMUSP00000026569//</EnsemblProteinID>
+    <InputValue>Eps8l1</InputValue>
+    <EnsemblProteinID>ENSMUSP00000083559//ENSMUSP00000133206//ENSMUSP00000131773//ENSMUSP00000125840//ENSMUSP00000126720//ENSMUSP00000133142////ENSMUSP00000131345//ENSMUSP00000133102//ENSMUSP00000127999//ENSMUSP00000130665</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Drg1</InputValue>
-    <EnsemblProteinID>//ENSMUSP00000020741//ENSMUSP00000125536//ENSMUSP00000116520</EnsemblProteinID>
+    <InputValue>Eps8l2</InputValue>
+    <EnsemblProteinID>//ENSMUSP00000026577//ENSMUSP00000120726</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Drg2</InputValue>
-    <EnsemblProteinID>ENSMUSP00000018568//</EnsemblProteinID>
+    <InputValue>Eps15</InputValue>
+    <EnsemblProteinID>ENSMUSP00000118949//ENSMUSP00000030281//ENSMUSP00000134922//ENSMUSP00000135034////ENSMUSP00000099790//ENSMUSP00000135270//ENSMUSP00000135755</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Drosha</InputValue>
-    <EnsemblProteinID>ENSMUSP00000129279//ENSMUSP00000087762//</EnsemblProteinID>
+    <InputValue>Eps15l1</InputValue>
+    <EnsemblProteinID>ENSMUSP00000129739//ENSMUSP00000148484////ENSMUSP00000148468</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Drp2</InputValue>
-    <EnsemblProteinID>ENSMUSP00000108852//ENSMUSP00000108850//ENSMUSP00000115246////ENSMUSP00000108854</EnsemblProteinID>
+    <InputValue>Epsti1</InputValue>
+    <EnsemblProteinID>ENSMUSP00000022591//ENSMUSP00000154502//ENSMUSP00000130138</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Drr1</InputValue>
-    <EnsemblProteinID>-</EnsemblProteinID>
+    <InputValue>Epyc</InputValue>
+    <EnsemblProteinID>ENSMUSP00000020094//ENSMUSP00000100922</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dsc2</InputValue>
-    <EnsemblProteinID>ENSMUSP00000074702//ENSMUSP00000116063//ENSMUSP00000123010//ENSMUSP00000042905</EnsemblProteinID>
+    <InputValue>Eqtn</InputValue>
+    <EnsemblProteinID>ENSMUSP00000102714//ENSMUSP00000030309</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dsc3</InputValue>
-    <EnsemblProteinID>ENSMUSP00000111514//ENSMUSP00000153279//ENSMUSP00000153261</EnsemblProteinID>
+    <InputValue>Eral1</InputValue>
+    <EnsemblProteinID>//ENSMUSP00000021183</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dscam</InputValue>
-    <EnsemblProteinID>ENSMUSP00000056040//ENSMUSP00000156602</EnsemblProteinID>
+    <InputValue>Erap1</InputValue>
+    <EnsemblProteinID>ENSMUSP00000152462//ENSMUSP00000133166//ENSMUSP00000152705//ENSMUSP00000152076//</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dscaml1</InputValue>
-    <EnsemblProteinID>ENSMUSP00000034592////ENSMUSP00000149771//ENSMUSP00000150245//ENSMUSP00000149247//ENSMUSP00000148905</EnsemblProteinID>
+    <InputValue>Erbb2</InputValue>
+    <EnsemblProteinID>ENSMUSP00000053897//</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dscc1</InputValue>
-    <EnsemblProteinID>ENSMUSP00000023059//ENSMUSP00000105860//</EnsemblProteinID>
+    <InputValue>Erbb3</InputValue>
+    <EnsemblProteinID>ENSMUSP00000080716</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dscr3</InputValue>
-    <EnsemblProteinID>//ENSMUSP00000156097//ENSMUSP00000023615</EnsemblProteinID>
+    <InputValue>Erbb4</InputValue>
+    <EnsemblProteinID>ENSMUSP00000112713//ENSMUSP00000114123//ENSMUSP00000115373//</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dse</InputValue>
-    <EnsemblProteinID>ENSMUSP00000149947//ENSMUSP00000150789////ENSMUSP00000040074</EnsemblProteinID>
+    <InputValue>Erbin</InputValue>
+    <EnsemblProteinID>ENSMUSP00000022222//ENSMUSP00000057956//ENSMUSP00000088813//ENSMUSP00000140931//ENSMUSP00000127607//ENSMUSP00000140536//</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dsel</InputValue>
-    <EnsemblProteinID>//ENSMUSP00000043570</EnsemblProteinID>
+    <InputValue>Erc1</InputValue>
+    <EnsemblProteinID>ENSMUSP00000139152//ENSMUSP00000139030//ENSMUSP00000139031//ENSMUSP00000078534//ENSMUSP00000139207//ENSMUSP00000139118//ENSMUSP00000138823////ENSMUSP00000032279//ENSMUSP00000139256//ENSMUSP00000138989</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dsg1c</InputValue>
-    <EnsemblProteinID>ENSMUSP00000054799</EnsemblProteinID>
+    <InputValue>Erc2</InputValue>
+    <EnsemblProteinID>ENSMUSP00000147981//ENSMUSP00000148076////ENSMUSP00000087773//ENSMUSP00000148033//ENSMUSP00000147744//ENSMUSP00000147814//ENSMUSP00000147886</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dsn1</InputValue>
-    <EnsemblProteinID>ENSMUSP00000120354//ENSMUSP00000099419//ENSMUSP00000122524////ENSMUSP00000099418//ENSMUSP00000122593</EnsemblProteinID>
+    <InputValue>Ercc1</InputValue>
+    <EnsemblProteinID>ENSMUSP00000125655//ENSMUSP00000135767//ENSMUSP00000135161////ENSMUSP00000135021//ENSMUSP00000003645</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dsp</InputValue>
-    <EnsemblProteinID>ENSMUSP00000115062//ENSMUSP00000117252//</EnsemblProteinID>
+    <InputValue>Ercc2</InputValue>
+    <EnsemblProteinID>//ENSMUSP00000104100//ENSMUSP00000054380//ENSMUSP00000117840//ENSMUSP00000104101</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dspp</InputValue>
-    <EnsemblProteinID>ENSMUSP00000108391</EnsemblProteinID>
+    <InputValue>Ercc3</InputValue>
+    <EnsemblProteinID>//ENSMUSP00000025241</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dst</InputValue>
-    <EnsemblProteinID>ENSMUSP00000138591//ENSMUSP00000138308//ENSMUSP00000095392//ENSMUSP00000139888//ENSMUSP00000138376//ENSMUSP00000140560////ENSMUSP00000148563//ENSMUSP00000138426//ENSMUSP00000141811//ENSMUSP00000142098//ENSMUSP00000095393//ENSMUSP00000138570//ENSMUSP00000141127//ENSMUSP00000110756</EnsemblProteinID>
+    <InputValue>Ercc4</InputValue>
+    <EnsemblProteinID>ENSMUSP00000118553//ENSMUSP00000114639//ENSMUSP00000023206//</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dstn</InputValue>
-    <EnsemblProteinID>ENSMUSP00000099461</EnsemblProteinID>
+    <InputValue>Ercc5</InputValue>
+    <EnsemblProteinID>//ENSMUSP00000027214</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dstyk</InputValue>
-    <EnsemblProteinID>//ENSMUSP00000140376//ENSMUSP00000035358//ENSMUSP00000139652</EnsemblProteinID>
+    <InputValue>Ercc6</InputValue>
+    <EnsemblProteinID>ENSMUSP00000066256////ENSMUSP00000154246</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dtd1</InputValue>
-    <EnsemblProteinID>ENSMUSP00000028917//</EnsemblProteinID>
+    <InputValue>Ercc6l</InputValue>
+    <EnsemblProteinID>ENSMUSP00000050592</EnsemblProteinID>
   </item>
   <item>
-    <InputValue>Dtd2</InputValue>
-    <EnsemblProteinID>ENSMUSP00000021339//ENSMUSP00000082525</EnsemblProteinID>
+    <InputValue>Ercc6l2</InputValue>
+    <EnsemblProteinID>ENSMUSP00000115796//ENSMUSP00000124912////ENSMUSP00000021926//ENSMUSP00000093392//ENSMUSP00000069488//ENSMUSP00000152142//ENSMUSP00000021925</EnsemblProteinID>
   </item>
 </response>
