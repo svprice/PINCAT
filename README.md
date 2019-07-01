@@ -1,5 +1,5 @@
 # PINCAT: Protein Interaction Network Computational Analysis Tool
-
+---
 ## Overview
 PINCAT provides preprocessing and a number of ready-to-run computational tools for the analysis of protein-protein interaction networks. 
 
@@ -15,8 +15,36 @@ PINCAT provides preprocessing and a number of ready-to-run computational tools f
 [l2]: <https://www.pnas.org/content/116/10/4426>
 
 ## Layout
+- raw_data/
+    - contains raw transcript expression data of the form GROUPID.txt
+- preprocessing/
+    - contains scipts for cleaning and manipulating the raw data into nodelists and edgelists
+- network_data/
+    - contains nodelists and edgelists 
+- network_analysis/
+    - contains a file network_features.py that has all the network functions
+    - contains code to run experimeents on the network data and the corresponding outputs
 
+## How to Perform Analysis on Partek Data
+To run analysis, 
+1. Clone the repository
+2. Add your "GROUPID.txt" raw data file to the raw_data folder
+3. Run partek_run.sh
+    ```console
+    bash preprocessing/partek_run.sh <GROUPID> partek_intermediate_files/ <CLASSIFICATION>
+    ```
+    where <CLASSIFICATION> is the label for the cells you want to select from the run.
+4. After the program completes (this may take up to an hour), run
+    ```console
+    <NEED TO CREATE PYTHON RUN_EXPERIMENT_SCRIPT>
+    ```
 
+    ## Example
+    
+    After adding "young_inj.txt" to raw_data, to compute Giulia's entropy for the PPI network, do the following:
+    ```
+    <NEED TO FINISH>
+    ```
 
 
 
