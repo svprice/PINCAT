@@ -1,3 +1,0 @@
-fa_partek_inj/postnatal.txt filter=lfs diff=lfs merge=lfs -text
-fa_partek_inj/young.txt filter=lfs diff=lfs merge=lfs -text
-fa_partek_inj/old.txt filter=lfs diff=lfs merge=lfs -text
