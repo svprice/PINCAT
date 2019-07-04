@@ -62,128 +62,6 @@ def partekSpecificPreprocessing(group_id, directory, classification):
         print("Partek specific preprocessing completed!")
 
 
-
-def downloadEnsemblMapData(group_id, directory):
-    # INPUT: file containing all the gene symbols
-    # OUTPUT: file containing all the gene symbols w/
-    #         corresponding ensembl IDs
-
-    print('Starting downloadEnsemblMapData...')
-    if os.path.exists(directory + group_id + '/db2db_GeneToEns_Responses'):
-	print("Directory db2db_GeneToEns_Responses already exists." \
-               + " Please delete existing directory to download data.")
-    else:
-        
-        directory = directory + group_id + '/'
-
-        os.mkdir(directory + 'db2db_GeneToEns_Responses')
-        
-        # url query
-        url_first = 'https://biodbnet-abcc.ncifcrf.gov/webServices/rest.php/' \
-                    + 'biodbnetRestApi.xml?method=db2db&format=row&input=' \
-                    + 'genesymbol&inputValues='
-        url_last = '&outputs=ensemblproteinid&taxonId=10090'
-
-        query_list = []
-
-        chunk_size = 100
-
-        url_genes = ''
-
-        cur = 0
-
-        f = open(directory + 'all_expressed_genes.txt','r')
-
-        while True:
-            
-            gene = f.readline()
-            url_genes += gene.replace('\n',',')
-            cur += 1
-            
-            if (not gene) or cur%chunk_size == 0:
-                
-                if url_genes[-1:] == ',':
-                    url_genes = url_genes[:-1]
-                
-                query_list.append(url_genes)
-                
-                url_genes = ''
-                
-                if not gene:
-                    break
-                
-               
-        print("Starting download from db2db.")
-        print(str(len(query_list)) + " API calls.")
-        count = 0
-        for idx in range(len(query_list)):
-            url_genes = query_list[idx]
-
-            url = url_first + url_genes + url_last
-            u = urllib.urlopen(url)
-            response = u.read()
-
-            with open(directory + 'db2db_GeneToEns_Responses/response_' + \
-                      str(idx) + '.xml', 'w') as f:
-                f.write(response)
-                count+=1
-                print(str(count) + "/" + str(len(query_list)) + " completed")
-
-    print('downloadEnsemblMapData completed!')
-
-
-def mergeToCreateEnsemblMap(group_id, directory):
-
-    print("Starting mergeToCreateEnsemblMap...")
-
-    if os.path.exists(directory + group_id + '/gene_ensembl_map.csv'):
-	print("File gene_ensembl_map.csv already exists." \
-               + " Please delete existing file to merge data.")
-    else:
-
-        directory = directory + group_id + '/'
-
-        response_list = os.listdir(directory + '/db2db_GeneToEns_Responses/')
-
-        # initialize gene symbol to ensembl map
-        ensembl_map = []
-        
-        for response_file in response_list:
-
-            # create element tree object
-            tree = ET.parse(directory + 'db2db_GeneToEns_Responses/' + response_file)
-
-            # get root element
-            root = tree.getroot()
-
-            # fill map
-            for item in root.findall('./'):
-                for element in item:
-                    if element.tag == 'InputValue':
-                        gene_symbol = element.text
-                    if element.tag == 'EnsemblProteinID':
-                        if element.text == None:
-                            ensembl_map.append((gene_symbol,""))
-                        else:
-                            ens_id_list = element.text.split('//')
-                            for ens_id in ens_id_list:
-                                ensembl_map.append((gene_symbol,ens_id))
-
-
-
-        output_map_df = pd.DataFrame(ensembl_map,columns=['gene_symbol', 'ensembl_id'])
-        output_map_df = output_map_df.iloc[output_map_df.gene_symbol.str.lower().argsort()]
-
-        output_map_df['ensembl_id'] = output_map_df['ensembl_id'].apply( \
-                lambda x: '10090.' + x)
-
-        output_map_df.to_csv(directory + 'gene_ensembl_map.csv',index=False)
-
-        print("mergeToCreateEnsemblMap completed!")
-
-    return 0
-
-
 def applyAllEnsemblMaps(group_id, directory):
     # INPUT: single gene symbol list file w/ expr val 
     # OUTPUT: single gene symbol and ensembl ID list w/ expr val
@@ -200,16 +78,36 @@ def applyAllEnsemblMaps(group_id, directory):
         os.mkdir(directory + 'EnsemblID')
 
         gene_symbol_list = os.listdir(directory + 'Gene_Symbol')
-        gene_ensembl_map = pd.read_csv(directory + 'gene_ensembl_map.csv')
+        gene_ensembl_map = pd.read_csv('mouse_ensembl_id_map.csv')
+        
+        expressed_genes = set()
+
+        with open(directory + 'all_expressed_genes.txt', 'r') as f:
+            for gene in f:
+                expressed_genes.add(gene.replace('\n',''))
+
+        mappable_genes = set(gene_ensembl_map['gene_symbol'].unique()).intersection( \
+                         set(expressed_genes))
+
         gene_ensembl_dict = {}
 
-        for gene in gene_ensembl_map['gene_symbol'].unique():
+        print('started creating dict...')
+        print(str(len(mappable_genes)) + ' genes')
+        cur = 0
+        for gene in mappable_genes:
+            cur+= 1
+            if cur % 500 == 0:
+                print(str(cur) + " genes completed")
             gene_ensembl_dict[gene] = \
                 gene_ensembl_map[gene_ensembl_map['gene_symbol']==gene]['ensembl_id'].tolist()
 
-        
+        print('completed creating dict')
+        print(str(len(gene_symbol_list)) + " to run") 
+        cur = 1
         for gene_symbol_file in gene_symbol_list:
-
+            
+            print(str(cur) + '/' + str(len(gene_symbol_list)))
+            cur+=1
             output_filename = gene_symbol_file.replace('gene_symbol','ensembl')
             output_file = open(directory + 'EnsemblID/' + output_filename,'w')
 
@@ -220,12 +118,13 @@ def applyAllEnsemblMaps(group_id, directory):
           
             output_file.write('gene_symbol,ensembl_id,expr_val\n')
             for key in sorted(gene_expr_dict):
-                for ens_id in gene_ensembl_dict[key]:
-                    if len(str(ens_id)) > 10:
-                        output_file.write(str(key)+',' \
-                                +str(ens_id)+',' \
-                                +str(gene_expr_dict[key]) \
-                                +'\n')
+                if key in gene_ensembl_dict.keys():
+                    for ens_id in gene_ensembl_dict[key]:
+                        if len(str(ens_id)) > 10:
+                            output_file.write(str(key)+',' \
+                                    +'10090.'+str(ens_id)+',' \
+                                    +str(gene_expr_dict[key]) \
+                                    +'\n')
 
 
             output_file.close()
@@ -235,7 +134,6 @@ def applyAllEnsemblMaps(group_id, directory):
         print('applyAllEnsemblMaps completed!')
 
     return 0
-
 
  
 def getNetworkData(group_id, directory):
@@ -279,9 +177,6 @@ def getNetworkData(group_id, directory):
 
 
     return 0
-
-
-
 
 
 
