@@ -1,6 +1,7 @@
 #!/usr/bin/python
 import sys
 import networkx as nx
+import networkx.algorithms.approximation as nx_approx
 import pandas as pd
 import numpy as np
 from numexpr import evaluate as ev
@@ -248,5 +249,41 @@ def marinka_resilience(edgelist):
 
 
 
+# summary: num_nodes, num_edges, 
+#          average_node_degree,
+#          num_connected_components,
+#          node_connectivity, average_clustering, max_clique_size,
+#          max_independent_set_size, min_vertex_cover_size,
+#          degree_assortativity_coefficient, 
+#          average_neighbor_degree, diameter
+#          wiener_index 
+def get_summary(edgelist):
 
+    start = timeit.default_timer()
+    g = nx.read_edgelist(edgelist, delimiter=',')
+
+    output = dict()
+
+    output['num_nodes'] = len(g.nodes())
+    output['num_edges'] = len(g.edges())
+    output['average_node_degree'] = np.mean([x[1] for x in list(nx.degree(g))])
+    output['num_connected_components'] = nx.number_connected_components(g)
+    output['node_connectivity'] = nx.node_connectivity(g)
+    output['average_clustering'] = nx.average_clustering(g)
+    output['max_clique_size'] = len(nx_approx.max_clique(g))
+    output['max_independent_set_size'] = nx_approx.maximum_independent_set(g)
+    output['min_vertex_cover_size'] = nx_approx.min_weighted_vertex_cover(g)
+    output['degree_assortativity_coefficient'] = \
+            nx.degree_assortativity_coefficient(g)
+    output['average_neighbor_degree'] = nx.average_neighbor_degree(g)
+    output['diameter'] = nx.diameter(g)
+    output['wiener_index'] = nx.wiener_index(g)
+
+
+    stop = timeit.degault_timer()
+    output['runtime'] = stop-start
+    output['edgelist'] = edgelist
+    
+    return output
+    
 

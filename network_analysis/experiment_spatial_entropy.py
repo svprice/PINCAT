@@ -4,7 +4,8 @@ import csv
 
 import network_features
 
-myod_folders = ['partek_myod_old', 'partek_myod_young', 'partek_myod_postnatal']
+# myod_folders = ['partek_myod_old', 'partek_myod_young', 'partek_myod_postnatal']
+myod_folders = ['partek_myod_old']
 
 
 for myod_group in myod_folders:

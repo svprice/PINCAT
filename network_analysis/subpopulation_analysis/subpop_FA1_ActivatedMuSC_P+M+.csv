@@ -1,0 +1,2 @@
+subpopulation,cell_num,num_nodes,num_edges,giulia_spatial_entropy,runtime,nodelist,edgelist
+FA1_ActivatedMuSC_P+M+,4564,3604,418089,968192.8843235418,26.304644107818604,../network_data/subpopulations_in_progress/FA1_ActivatedMuSC_P+M+/FA1_ActivatedMuSC_P+M+_4564_nodelist.csv,../network_data/subpopulations_in_progress/FA1_ActivatedMuSC_P+M+/FA1_ActivatedMuSC_P+M+_4564_edgelist.csv
