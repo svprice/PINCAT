@@ -14,15 +14,6 @@ python -c 'import sys, preprocess_functions as pf; \
     pf.partekSpecificPreprocessing(sys.argv[1],sys.argv[2],sys.argv[3])' \
     "$GROUP" "$OUTPUT_DIR" "$CLASS"
 
-
-python -c 'import sys, preprocess_functions as pf; \
-    pf.downloadEnsemblMapData(sys.argv[1],sys.argv[2])' \
-    "$GROUP" "$OUTPUT_DIR"
-    
-python -c 'import sys, preprocess_functions as pf; \
-    pf.mergeToCreateEnsemblMap(sys.argv[1],sys.argv[2])' \
-    "$GROUP" "$OUTPUT_DIR"
-
 python -c 'import sys, preprocess_functions as pf; \
     pf.applyAllEnsemblMaps(sys.argv[1],sys.argv[2])' \
     "$GROUP" "$OUTPUT_DIR"

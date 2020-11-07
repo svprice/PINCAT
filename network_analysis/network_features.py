@@ -266,24 +266,33 @@ def get_summary(edgelist):
 
     output['num_nodes'] = len(g.nodes())
     output['num_edges'] = len(g.edges())
+    print('1')
     output['average_node_degree'] = np.mean([x[1] for x in list(nx.degree(g))])
     output['num_connected_components'] = nx.number_connected_components(g)
-    output['node_connectivity'] = nx.node_connectivity(g)
-    output['average_clustering'] = nx.average_clustering(g)
-    output['max_clique_size'] = len(nx_approx.max_clique(g))
-    output['max_independent_set_size'] = nx_approx.maximum_independent_set(g)
-    output['min_vertex_cover_size'] = nx_approx.min_weighted_vertex_cover(g)
+    print('2')
+    # output['average_clustering'] = nx.average_clustering(g) 
+    # print('3')
+    # output['node_connectivity'] = nx.node_connectivity(g)
+    print('4')
+    # output['max_clique_size'] = len(nx_approx.max_clique(g))
+    # output['max_independent_set_size'] = len(nx_approx.maximum_independent_set(g))
+    output['min_vertex_cover_size'] = len(nx_approx.min_weighted_vertex_cover(g))
+    print('5')
     output['degree_assortativity_coefficient'] = \
             nx.degree_assortativity_coefficient(g)
+    print('6')
     output['average_neighbor_degree'] = nx.average_neighbor_degree(g)
-    output['diameter'] = nx.diameter(g)
-    output['wiener_index'] = nx.wiener_index(g)
+    print('7')
+    # output['diameter'] = nx.diameter(g)
+    print('8')
+    # output['wiener_index'] = nx.wiener_index(g)
 
 
-    stop = timeit.degault_timer()
+    stop = timeit.default_timer()
     output['runtime'] = stop-start
     output['edgelist'] = edgelist
     
     return output
+
     
 

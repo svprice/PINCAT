@@ -22,7 +22,7 @@ def partekSpecificPreprocessing(group_id, directory, classification):
         os.mkdir(directory + group_id)
 
         print("Downloading raw data...")
-        raw_data = pd.read_csv(raw_file,sep='\t')
+        raw_data = pd.read_csv(raw_file)
         print("Successfully downloaded raw data.")
 
         directory = directory + group_id + "/"
@@ -52,7 +52,7 @@ def partekSpecificPreprocessing(group_id, directory, classification):
 
         print("Making gene symbol files...")
         for cell_id in cell_expression_array.columns:
-                print(cell_id)
+                # print(cell_id)
                 sc_data = cell_expression_array[[cell_id]]
                 sc_data = sc_data.rename(columns={sc_data.columns[0] : 'expr_val'})
                 sc_data.to_csv(directory+'Gene_Symbol/'
@@ -105,8 +105,8 @@ def applyAllEnsemblMaps(group_id, directory):
         print(str(len(gene_symbol_list)) + " to run") 
         cur = 1
         for gene_symbol_file in gene_symbol_list:
-            
-            print(str(cur) + '/' + str(len(gene_symbol_list)))
+            if cur % 1000 == 0:
+            	print(str(cur) + '/' + str(len(gene_symbol_list)))
             cur+=1
             output_filename = gene_symbol_file.replace('gene_symbol','ensembl')
             output_file = open(directory + 'EnsemblID/' + output_filename,'w')

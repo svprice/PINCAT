@@ -21,9 +21,10 @@ if(file.exists(output_file)){
                               score_threshold=0, input_directory="")
     cat("Finished downloading mouse STRINGdb interaction data.\n")
 
-    input_file = paste(output_directory, group_id, '/gene_ensembl_map.csv', sep='')
-    fa1_clean <- read.csv(input_file)
-    fa1_levels<- fa1_clean$ensembl_id
+    input_file = paste(output_directory, group_id, '/all_expressed_genes.txt', sep='')
+    fa1_clean <- read.csv(input_file, header = FALSE)
+    names(fa1_clean) <- c('ens_id')
+    fa1_levels<- fa1_clean$ens_id
     fa1_hits <- as.character(fa1_levels)
     interactions <- string_db$get_interactions(fa1_hits)
     write.csv(interactions,file=output_file, 
