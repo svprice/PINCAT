@@ -35,8 +35,6 @@ To run analysis,
     ```
     where <CLASSIFICATION> is the label for the cells you want to select from the run.
 
-    ```
-
 
 
 
