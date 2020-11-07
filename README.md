@@ -34,16 +34,7 @@ To run analysis,
     bash preprocessing/partek_run.sh <GROUPID> partek_intermediate_files/ <CLASSIFICATION>
     ```
     where <CLASSIFICATION> is the label for the cells you want to select from the run.
-4. After the program completes (this may take up to an hour), run
-    ```console
-    <NEED TO CREATE PYTHON RUN_EXPERIMENT_SCRIPT>
-    ```
 
-    ## Example
-    
-    After adding "young_inj.txt" to raw_data, to compute Giulia's entropy for the PPI network, do the following:
-    ```
-    <NEED TO FINISH>
     ```
 
 
